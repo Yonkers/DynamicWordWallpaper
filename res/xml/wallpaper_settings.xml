@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <ListPreference
+	    android:key="word_size"
+	    android:title="@string/wallpaper_setting_word_size_title"
+	    android:summary="@string/wallpaper_setting_word_size_summary"
+	    android:entries="@array/word_size_names"
+	    android:entryValues="@array/word_size_values" />
+
+</PreferenceScreen>

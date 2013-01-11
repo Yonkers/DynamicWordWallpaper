@@ -1,0 +1,23 @@
+<declare-styleable name="Wallpaper" >
+
+    <!--
+             Component name of an activity that allows the user to modify
+	         the current settings for this wallpaper.
+    -->
+    <attr name="WallpaperSetting" />
+
+    <!-- Reference to a the wallpaper's thumbnail bitmap. -->
+
+    <attr
+        name="thumbnail"
+        format="@drawable/ic_launcher" />
+
+    <!-- Name of the author of this component, e.g. Google. -->
+    <attr
+        name="author"
+        format="@string/author" />
+
+    <!-- Short description of the component's purpose or behavior. -->
+    <attr name="@string/wallpaper_description" />
+
+</declare-styleable>
