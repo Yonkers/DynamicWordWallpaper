@@ -14,8 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".activity.Main"
-            android:label="@string/wallpaper_setting_title" >
+            android:name=".activity.Main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -23,8 +22,8 @@
         </activity>
         <activity 
             android:name=".activity.WallpaperSetting"
-            android:theme="@android:style/Theme.WallpaperSettings"
-            android:exported="true" ></activity>
+            android:exported="true" >
+        </activity>
         <service 
             android:name=".service.WordsService"
             android:permission="android.permission.BIND_WALLPAPER">

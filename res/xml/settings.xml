@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen 
-	xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/settings_title">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/title_synamic_wallpaper_setting" >
 
-    <ListPreference
-	    android:key="word_size"
-	    android:title="@string/wallpaper_setting_word_size_title"
-	    android:summary="@string/wallpaper_setting_word_size_summary"
-	    android:entries="@array/word_size_names"
-	    android:entryValues="@array/word_size_values" />
+    <PreferenceCategory android:title="@string/desk_setting" >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="float_on_desktop"
+            android:summary="@string/summary_float_on_desktop"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="@string/title_float_on_desktop" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/title_allpaper_setting" >
+        <PreferenceScreen
+            android:key="wallpaper_setting"
+            android:summary="@string/summary_allpaper_setting"
+            android:title="@string/title_allpaper_setting" >
+        </PreferenceScreen>
+    </PreferenceCategory>
 
 </PreferenceScreen>

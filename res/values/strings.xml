@@ -6,10 +6,19 @@
     <string name="menu_settings">Settings</string>
     <string name="wallpaper_description">words wallpaper</string>
     <string name="author">Yonkers</string>
-    <string name="settings_title">WallpaperSetting</string>
     <string name="wallpaper_setting_word_size_title">Word Size</string>
     <string name="wallpaper_setting_word_size_summary">Set Word Size</string>
     
     <string name="wallpaper_setting_title">单词墙纸设置</string>
+    
+    <string name="title_allpaper_setting">墙纸设置</string>
+    <string name="title_synamic_wallpaper_setting">单词墙纸设置</string>
+    
+    <string name="summary_allpaper_setting">设置墙纸显示参数</string>
+    
+    
+    <string name="desk_setting">桌面设置</string>
+    <string name="title_float_on_desktop">允许左面悬浮窗</string>
+    <string name="summary_float_on_desktop">开启可以在桌面悬浮显示单词</string>
 
 </resources>
