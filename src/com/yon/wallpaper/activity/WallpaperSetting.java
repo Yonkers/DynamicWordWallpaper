@@ -6,7 +6,7 @@ import android.preference.PreferenceActivity;
 import android.util.Log;
 
 import com.yon.wallpaper.R;
-import com.yon.wallpaper.service.WordsService;
+import com.yon.wallpaper.service.WordsWallpaperService;
 
 public class WallpaperSetting extends PreferenceActivity implements
 		SharedPreferences.OnSharedPreferenceChangeListener {
@@ -15,7 +15,7 @@ public class WallpaperSetting extends PreferenceActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		getPreferenceManager().setSharedPreferencesName(
-				WordsService.PREFERENCES_NAME_WORD_SIZE);
+				WordsWallpaperService.PREFERENCES_NAME_WORD_SIZE);
 		addPreferencesFromResource(R.xml.wallpaper_settings);
 		getPreferenceManager().getSharedPreferences()
 				.registerOnSharedPreferenceChangeListener(this);
@@ -33,7 +33,7 @@ public class WallpaperSetting extends PreferenceActivity implements
 
 	public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
 			String key) {
-		String value = sharedPreferences.getString(WordsService.PREFERENCES_NAME_WORD_SIZE, "");
+		String value = sharedPreferences.getString(WordsWallpaperService.PREFERENCES_NAME_WORD_SIZE, "");
 		Log.d("lyj", "WordsService.PREFERENCES_NAME-->"+value);
 	}
 }

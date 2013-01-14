@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/previe_word_layout"
+        android:background="@color/half_transparent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <com.orgcent.desktop.AutoScrollTextView 
+            android:id="@+id/preview_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="#ddbbccdd"
+            android:textSize="22sp"
+            android:text="May-December romance.浪漫关系中年轻的一方处于生命的“春天”..."/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <ImageButton
+            android:id="@+id/btn_big_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/btn_big_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_big_up"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageButton
+            android:id="@+id/btn_small_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/btn_small_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_small_up"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+    
+    <Button android:id="@+id/toggle_lock_screen"
+        android:layout_alignParentBottom="true"
+        android:text="lock screen"
+        android:textColor="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    
+
+</RelativeLayout>

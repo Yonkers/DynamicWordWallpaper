@@ -15,7 +15,7 @@ import android.view.SurfaceHolder;
 import android.view.WindowManager;
 
 import com.yon.wallpaper.R;
-import com.yon.wallpaper.service.WordsService;
+import com.yon.wallpaper.service.WordsWallpaperService;
 
 public class WordPainter extends Thread implements
 		SharedPreferences.OnSharedPreferenceChangeListener {
@@ -49,16 +49,16 @@ public class WordPainter extends Thread implements
 		height = windowManager.getDefaultDisplay().getHeight();
 		
 		//获取Sharepreference并注册配置变化事件
-		prefs = context.getSharedPreferences(WordsService.PREFERENCES_NAME_WORD_SIZE, Context.MODE_PRIVATE);
+		prefs = context.getSharedPreferences(WordsWallpaperService.PREFERENCES_NAME_WORD_SIZE, Context.MODE_PRIVATE);
 		prefs.registerOnSharedPreferenceChangeListener(this);
 		
-		wordSize = Integer.parseInt(prefs.getString(WordsService.PREFERENCES_NAME_WORD_SIZE, "20"));
+		wordSize = Integer.parseInt(prefs.getString(WordsWallpaperService.PREFERENCES_NAME_WORD_SIZE, "20"));
 	}
 	
 	@Override
 	public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
 			String key) {
-		wordSize = Integer.parseInt(sharedPreferences.getString(WordsService.PREFERENCES_NAME_WORD_SIZE, "20"));
+		wordSize = Integer.parseInt(sharedPreferences.getString(WordsWallpaperService.PREFERENCES_NAME_WORD_SIZE, "20"));
 	}
 	
 	public void onPause(){

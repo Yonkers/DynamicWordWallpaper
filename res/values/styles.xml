@@ -16,5 +16,10 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-
+    
+	<style name="ranslucentFullScreen" parent="android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/half_transparent</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+    
 </resources>

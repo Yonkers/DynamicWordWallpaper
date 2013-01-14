@@ -7,7 +7,7 @@ import android.view.SurfaceHolder;
 
 import com.yon.wallpaper.control.WordPainter;
 
-public class WordsService extends WallpaperService {
+public class WordsWallpaperService extends WallpaperService {
 	
 	public static final String PREFERENCES_NAME_WORD_SIZE = "word_size";
 
